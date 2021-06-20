@@ -32,11 +32,10 @@ class Blogs extends React.Component {
       <Item key={post.id} id={post.id} value={post} onClick={ (e) => this.handleDeleteItem(post.id)} />
     )
     return (
-      <div>
+      <div className="posts">
         {this.state.posts.length == 0 &&
         <span>Bạn không còn item nào</span>
-        }
-        
+        }   
         <ul>{listItems}</ul>
       </div>
     );
@@ -44,9 +43,9 @@ class Blogs extends React.Component {
 }
 
 const posts = [
-  {id: 1, color: 'Yellow', title: 'Title 1', content: 'Content 1'},
-  {id: 2, color: 'Red', title: 'Title 2', content: 'Content 2'},
-  {id: 3, color: 'Blue',  title: 'Title 3', content: 'Content 3'},
+  {id: 1, color: 'Yellow', title: 'Title 1', content: 'Content 1, xxxxxxxxxxx'},
+  {id: 2, color: 'Red', title: 'Title 2', content: 'Content 2, yyyyyyyyyyy'},
+  {id: 3, color: 'Blue',  title: 'Title 3', content: 'Content 3, yyyyyyyyyyy'},
 ]
 
 ReactDOM.render(

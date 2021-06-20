@@ -60,3 +60,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.posts {
+  margin-left: 100px;
+  margin-top: 100px;
+}
